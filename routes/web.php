@@ -20,3 +20,5 @@ Route::post('/pushData', 'BerandaController@store');
 Route::get('/login', 'LoginController@index')->name('login');
 Route::post('/Daftar', 'LoginController@register');
 Route::post('/Masuk', 'LoginController@masuk');
+Route::get('/Keluar', 'LoginController@keluar');
+Route::post('/AddCart', 'OrderController@order');

@@ -23,6 +23,7 @@ class LoginController extends Controller
         if($user->password == $request->password){
             $request->session()->put('id', $user->id);
             echo 'Data disimpan dengan session id = '.$request->session()->get('id');
+            return redirect('/');
         }else{
             echo 'Anda gagal login';
         }

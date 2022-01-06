@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'BerandaController@index')->name('beranda');
+Route::post('/pushData', 'BerandaController@store');
+
+Route::get('/login', 'LoginController@index')->name('login');
+Route::post('/Daftar', 'LoginController@register');
